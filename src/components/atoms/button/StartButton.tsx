@@ -9,6 +9,6 @@ export const StartButton: VFC = memo(() => {
   const onClickabout = useCallback(() => history.push("/about"),[history]);
   
   return(
-    <button className="startButton" onClick={ onClickabout}>このサイトを探索する</button>
+    <button className="startButton" onClick={ onClickabout}>サイトを閲覧</button>
   )
 });
