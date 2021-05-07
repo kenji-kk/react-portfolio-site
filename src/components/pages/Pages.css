@@ -1,0 +1,103 @@
+/*Top.tsx*/
+.topBody {
+  background: url("../../images/top-building.jpg") no-repeat fixed left bottom;
+  background-size: cover;
+  height: 100vh;
+}
+.topWrap {
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  margin: auto;
+  animation: topWrap 2s 2s;
+}
+.topWelcom {
+}
+
+.topTo {
+}
+
+.topKenji {
+}
+
+.topPortfolio {
+}
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .topWrap {
+    position: relative;
+    top: 17vh;
+    width: 95vw;
+    height: 60vh;
+    padding-top: 3vh;
+  }
+
+  .topWelcom,
+  .topTo,
+  .topKenji,
+  .topPortfolio {
+    font-size: 12vw;
+    margin-bottom: 5vw;
+  }
+
+  .topWelcom {
+    animation: topWelcom 0.5s;
+  }
+
+  .topTo {
+    transform: translateX(-50vh);
+    animation: topTo 0.5s 0.5s forwards;
+  }
+
+  .topKenji {
+    transform: translateX(50vh);
+    animation: topKenji 0.5s 1s forwards;
+  }
+
+  .topPortfolio {
+    transform: translateY(70vh);
+    animation: topPortfolio 0.5s 1.5s forwards;
+  }
+
+  @keyframes topWelcom {
+    0% {
+      transform: translateY(-30vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes topTo {
+    0% {
+      transform: translateX(-50vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topKenji {
+    0% {
+      transform: translateX(50vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topPortfolio {
+    0% {
+      transform: translateY(70vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topWrap {
+    0% {
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
