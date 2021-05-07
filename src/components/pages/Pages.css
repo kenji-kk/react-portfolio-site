@@ -28,7 +28,7 @@
     width: 95vw;
     height: 60vh;
     padding-top: 3vh;
-    animation: topWrap 2s 2s forwards;
+    animation: topWrap 2s 4s forwards;
   }
 
   .topWelcom,
@@ -40,22 +40,23 @@
   }
 
   .topWelcom {
-    animation: topWelcom 0.5s;
+    transform: translateY(-30vh);
+    animation: topWelcom 0.5s 2s forwards;
   }
 
   .topTo {
     transform: translateX(-50vh);
-    animation: topTo 0.5s 0.5s forwards;
+    animation: topTo 0.5s 2.5s forwards;
   }
 
   .topKenji {
     transform: translateX(50vh);
-    animation: topKenji 0.5s 1s forwards;
+    animation: topKenji 0.5s 3s forwards;
   }
 
   .topPortfolio {
     transform: translateY(70vh);
-    animation: topPortfolio 0.5s 1.5s forwards;
+    animation: topPortfolio 0.5s 3.5s forwards;
   }
 
   @keyframes topWelcom {
