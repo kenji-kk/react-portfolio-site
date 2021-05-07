@@ -21,21 +21,23 @@
 
 .topPortfolio {
 }
-@media screen and (min-width: 0) and (max-width: 576px) {
+@media screen and (min-width: 0) and (max-width: 650px) {
   .topWrap {
     position: relative;
     top: 17vh;
-    width: 95vw;
-    height: 60vh;
+    width: 87vw;
+    height: auto;
     padding-top: 3vh;
     animation: topWrap 2s 4s forwards;
+    padding-bottom: 3vh;
   }
 
   .topWelcom,
   .topTo,
   .topKenji,
   .topPortfolio {
-    font-size: 12vw;
+    font-size: 10vw;
+    font-family: "Georgia";
     margin-bottom: 5vw;
   }
 
@@ -50,7 +52,7 @@
   }
 
   .topKenji {
-    transform: translateX(50vh);
+    transform: translateX(60vh);
     animation: topKenji 0.5s 3s forwards;
   }
 
