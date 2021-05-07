@@ -1,0 +1,33 @@
+/* StartButton */
+.startButton {
+  background-color: orange;
+}
+@media screen and (min-width: 0) and (max-width: 650px) {
+  .startButton {
+    border-radius: 100vh;
+    border: none;
+    padding: 10px 50px;
+    box-shadow: 5px 5px 3px black;
+    font-weight: bold;
+    color: white;
+    animation: startButton 2s 5s forwards;
+    opacity: 0;
+  }
+
+  .startButton:hover {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 165, 0, 0.8);
+  }
+
+  @keyframes startButton {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
