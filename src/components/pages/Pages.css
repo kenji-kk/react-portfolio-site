@@ -3,12 +3,12 @@
   background: url("../../images/top-building.jpg") no-repeat fixed left bottom;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 .topWrap {
   background-color: rgba(255, 255, 255, 0);
   text-align: center;
   margin: auto;
-  animation: topWrap 2s 2s;
 }
 .topWelcom {
 }
@@ -28,6 +28,7 @@
     width: 95vw;
     height: 60vh;
     padding-top: 3vh;
+    animation: topWrap 2s 2s forwards;
   }
 
   .topWelcom,
