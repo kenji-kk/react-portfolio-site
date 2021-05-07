@@ -10,6 +10,12 @@
   text-align: center;
   margin: auto;
 }
+.topWelcom,
+.topTo,
+.topKenji,
+.topPortfolio {
+  font-family: "Georgia";
+}
 .topWelcom {
 }
 
