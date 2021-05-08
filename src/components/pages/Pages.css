@@ -3,7 +3,6 @@
   background: url("../../images/top-building.jpg") no-repeat fixed left bottom;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
 }
 .topWrap {
   background-color: rgba(255, 255, 255, 0);
@@ -28,6 +27,10 @@
 .topPortfolio {
 }
 @media screen and (min-width: 0) and (max-width: 650px) {
+  .topBody {
+    overflow: hidden;
+  }
+
   .topWrap {
     position: relative;
     top: 17vh;
@@ -161,6 +164,10 @@
 }
 
 @media screen and (min-width: 651px) {
+  .topBody {
+    animation: topBodyOverflow 4s forwards;
+  }
+
   .topWrap {
     position: relative;
     top: 10vh;
@@ -198,6 +205,18 @@
   .topPortfolio {
     transform: translateY(70vh);
     animation: topPortfolioSlide 0.5s 3.5s forwards, topPortfolioScale 1s 4s;
+  }
+
+  @keyframes topBodyOverflow {
+    0% {
+      overflow: hidden;
+    }
+    99% {
+      overflow: hidden;
+    }
+    100% {
+      overflow-y: visible;
+    }
   }
 
   @keyframes topWelcomSlide {
