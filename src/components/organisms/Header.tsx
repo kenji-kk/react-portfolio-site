@@ -6,16 +6,21 @@ import './organisms.css'
 type Props = {
   children: ReactNode;
   onClickDrawer: () => void;
+  iconChangeFlag: boolean;
 }
 
 export const Header: VFC<Props> = memo((props) => {
-  const { children, onClickDrawer } = props;
+  const { children, onClickDrawer, iconChangeFlag } = props;
   
   return (
     <>
     <div className="headerWrap">
       <p className="headerTitle">{children}</p>
-      <DehazeIcon className="headerDehazeIcon" onClick={onClickDrawer}/>
+      <button className="HeaderMenuButton" onClick={onClickDrawer}>
+        <span className="material-icons-outlined HeaderMenuIcon" >
+            {iconChangeFlag ? "menu" : "close"}
+        </span>
+      </button>
     </div>
     </>
   )
