@@ -28,6 +28,10 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
         <div className={drawer}>
           aaaaaaaaaaaaaa
         </div>
+        <span className="material-icons-outlined">
+          menu
+        </span>
+        
         {children}
       </>
   )
