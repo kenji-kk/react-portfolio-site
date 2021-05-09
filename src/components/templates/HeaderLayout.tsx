@@ -1,7 +1,7 @@
-import { memo, ReactNode, VFC } from 'react';
+import { memo, ReactNode, useState, VFC } from 'react';
 
 import { Header } from '../organisms/Header'
-
+import './Templates.css'
 type Props = {
   children: ReactNode;
   title: string;
@@ -9,11 +9,25 @@ type Props = {
 
 export const HeaderLayout: VFC<Props> = memo((props) => {
   const { children, title } = props;
+  const [ drawer, setDrawer ] = useState<string>("headerLayoutDrawerOff");
+  const off = "headerLayoutDrawerOff";
+  const on = "headerLayoutDrawerOn";
   return (
       <>
-        <Header>
+        <Header onClickDrawer={() => {
+          if (!(drawer == off)){
+              setDrawer(off)
+            } else {
+              setDrawer(on)
+            }
+          }
+          }
+        >
           {title}
         </Header>
+        <div className={drawer}>
+          aaaaaaaaaaaaaa
+        </div>
         {children}
       </>
   )

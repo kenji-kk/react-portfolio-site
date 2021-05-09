@@ -1,0 +1,44 @@
+/* HeaderLayout.tsx */
+.headerLayoutWrap {
+}
+
+.headerLayoutDrawerOn {
+  position: fixed;
+  top: 15vw;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: opacityAppear 0.3s forwards;
+}
+.headerLayoutDrawerOff {
+  background: rgba(0, 0, 0, 0.7);
+  animation: opacityDisappear 0.3s forwards;
+  position: fixed;
+  top: 15vw;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+@keyframes opacityAppear {
+  0% {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes opacityDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 650px) {
+}
