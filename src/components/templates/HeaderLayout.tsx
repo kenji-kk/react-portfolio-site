@@ -1,4 +1,5 @@
 import { memo, ReactNode, useState, VFC } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Header } from '../organisms/Header'
 import './Templates.css'
@@ -16,10 +17,10 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
   const onClickDrawer = () => {
     if (!(drawer === off)){
       setDrawer(off);
-      setIconChangeFlag(false);
+      setIconChangeFlag(!iconChangeFlag);
     } else {
       setDrawer(on);
-      setIconChangeFlag(true);
+      setIconChangeFlag(!iconChangeFlag);
     }
   };
   return (
@@ -28,7 +29,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
           {title}
         </Header>
         <div className={drawer}>
-          aaaaaaaaaaaaaa
+          <Link to="/skill">スキル</Link>
         </div>
         
         {children}
