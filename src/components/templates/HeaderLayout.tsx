@@ -15,7 +15,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
   return (
       <>
         <Header onClickDrawer={() => {
-          if (!(drawer == off)){
+          if (!(drawer === off)){
               setDrawer(off)
             } else {
               setDrawer(on)
