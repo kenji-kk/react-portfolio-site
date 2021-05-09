@@ -15,7 +15,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
   const off = "headerLayoutDrawerOff";
   const on = "headerLayoutDrawerOn";
   const onClickDrawer = () => {
-    if (!(drawer === off)){
+    if (( drawer === on )){
       setDrawer(off);
       setIconChangeFlag(!iconChangeFlag);
     } else {
@@ -23,13 +23,17 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
       setIconChangeFlag(!iconChangeFlag);
     }
   };
+  const onClickLink = () => {
+    setDrawer(off);
+    setIconChangeFlag(!iconChangeFlag);
+  };
   return (
       <>
         <Header onClickDrawer={ onClickDrawer } iconChangeFlag={ iconChangeFlag }>
           {title}
         </Header>
         <div className={drawer}>
-          <Link to="/skill">スキル</Link>
+          <Link to="/skill" onClick={ onClickLink }>スキル</Link>
         </div>
         
         {children}
