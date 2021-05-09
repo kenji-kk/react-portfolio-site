@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 
-.headerDehazeIcon {
+.HeaderMenuButton {
   color: aqua;
   margin-left: auto;
 }
@@ -26,10 +26,37 @@
     padding-top: 3vw;
   }
 
-  .headerDehazeIcon {
+  .HeaderMenuButton {
     color: aqua;
     margin-left: auto;
-    padding-top: 4vw;
-    font-size: 100px;
+    padding-top: 3vw;
+    font-size: 5vh;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+
+  .HeaderMenuButton:active .HeaderMenuIcon {
+    animation: rotate 0.7s ease-out;
+  }
+
+  .HeaderMenuButton:hover {
+    opacity: 0.5;
+  }
+
+  .HeaderMenuIcon {
+    font-size: 5vh;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
