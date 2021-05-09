@@ -1,5 +1,4 @@
 import { memo, ReactNode, VFC } from 'react';
-import DehazeIcon from '@material-ui/icons/Dehaze';
 
 import './organisms.css'
 
