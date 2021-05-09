@@ -30,7 +30,6 @@
     color: aqua;
     margin-left: auto;
     padding-top: 3vw;
-    font-size: 5vh;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -47,7 +46,7 @@
   }
 
   .HeaderMenuIcon {
-    font-size: 5vh;
+    font-size: 9vw;
   }
 
   @keyframes rotate {
