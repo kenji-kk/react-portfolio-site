@@ -1,44 +1,137 @@
 /* HeaderLayout.tsx */
-.headerLayoutWrap {
+
+@media screen and (min-width: 0) and (max-width: 550px) {
+  .headerLayoutDrawerFirst {
+    display: none;
+  }
+
+  .headerLayoutDrawerOn {
+    position: fixed;
+    top: 15vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: opacityAppear 0.3s forwards;
+  }
+  .headerLayoutDrawerOff {
+    background: rgba(0, 0, 0, 0.7);
+    animation: opacityDisappear 0.3s forwards;
+    position: fixed;
+    top: 15vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .headerLayoutDummy {
+    margin-top: 15vw;
+  }
+
+  nav {
+    margin-top: 30vw;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 10vw;
+  }
+
+  .headerLayoutLink {
+    font-size: 10vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1vw;
+  }
+  .headerLayoutTop {
+  }
+
+  @keyframes opacityAppear {
+    0% {
+      color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      color: rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  @keyframes opacityDisappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
 
-.headerLayoutDrawerOn {
-  position: fixed;
-  top: 15vw;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  animation: opacityAppear 0.3s forwards;
-}
-.headerLayoutDrawerOff {
-  background: rgba(0, 0, 0, 0.7);
-  animation: opacityDisappear 0.3s forwards;
-  position: fixed;
-  top: 15vw;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  pointer-events: none;
-}
+@media screen and (min-width: 551px) {
+  .headerLayoutDrawerFirst {
+    display: none;
+  }
 
-@keyframes opacityAppear {
-  0% {
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
+  .headerLayoutDrawerOn {
+    position: fixed;
+    top: 6vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: opacityAppear 0.3s forwards;
   }
-  100% {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(0, 0, 0, 0.7);
+  .headerLayoutDrawerOff {
+    background: rgba(0, 0, 0, 0.7);
+    animation: opacityDisappear 0.3s forwards;
+    position: fixed;
+    top: 6vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
   }
-}
-@keyframes opacityDisappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
-@media screen and (min-width: 0) and (max-width: 650px) {
+  .headerLayoutDummy {
+    margin-top: 6vw;
+  }
+
+  nav {
+    margin-top: 4vw;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 4vw;
+  }
+
+  .headerLayoutLink {
+    font-size: 5vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1vw;
+  }
+  .headerLayoutTop {
+  }
+
+  @keyframes opacityAppear {
+    0% {
+      color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      color: rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  @keyframes opacityDisappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
