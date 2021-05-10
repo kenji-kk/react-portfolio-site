@@ -14,12 +14,12 @@ export const Router: VFC = memo(() => {
         <Top/>
       </Route>
       <Route path="/about">
-        <HeaderLayout title="ABOUT">
+        <HeaderLayout title="ABOUT ME">
           <About/>
         </HeaderLayout>
       </Route>
       <Route path="/skill">
-        <HeaderLayout title="skill">
+        <HeaderLayout title="SKILL">
           <Skill/>
         </HeaderLayout>
       </Route>

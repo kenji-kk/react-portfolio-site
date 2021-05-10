@@ -33,7 +33,10 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
           {title}
         </Header>
         <div className={drawer}>
-          <Link to="/skill" onClick={ onClickLink }>スキル</Link>
+          <Link to="/" onClick={ onClickLink }>Top</Link>
+          <Link to="/about" onClick={ onClickLink }>About me</Link>
+          <Link to="/skill" onClick={ onClickLink }>Skill</Link>
+          <Link to="/portfolio" onClick={ onClickLink }>Portfolio</Link>
         </div>
         
         {children}
