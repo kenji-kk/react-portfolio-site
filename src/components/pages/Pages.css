@@ -26,7 +26,144 @@
 
 .topPortfolio {
 }
-@media screen and (min-width: 0) and (max-width: 650px) {
+
+@media screen and (min-width: 0) and (max-width: 414px) {
+  .topBody {
+    overflow: hidden;
+  }
+
+  .topWrap {
+    position: relative;
+    top: 17vh;
+    width: 87vw;
+    height: auto;
+    padding-top: 3vh;
+    animation: topWrapSlide 2s 4s forwards;
+    padding-bottom: 3vh;
+  }
+
+  .topWelcom,
+  .topTo,
+  .topKenji,
+  .topPortfolio {
+    font-size: 10vw;
+    font-family: "Georgia";
+    margin-bottom: 5vw;
+  }
+
+  .topWelcom {
+    transform: translateY(-30vh);
+    animation: topWelcomSlide 0.5s 2s forwards, topWelcomScale 1s 2.5s;
+  }
+
+  .topTo {
+    transform: translateX(-50vh);
+    animation: topToSlide 0.5s 2.5s forwards, topToScale 1s 3s;
+  }
+
+  .topKenji {
+    transform: translateX(60vh);
+    animation: topKenjiSlide 0.5s 3s forwards, topKenjiScale 1s 3.5s;
+  }
+
+  .topPortfolio {
+    transform: translateY(70vh);
+    animation: topPortfolioSlide 0.5s 3.5s forwards, topPortfolioScale 1s 4s;
+  }
+
+  @keyframes topWelcomSlide {
+    0% {
+      transform: translateY(-30vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes topToSlide {
+    0% {
+      transform: translateX(-50vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topKenjiSlide {
+    0% {
+      transform: translateX(50vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topPortfolioSlide {
+    0% {
+      transform: translateY(70vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes topWrapSlide {
+    0% {
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  @keyframes topWelcomScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes topToScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes topKenjiScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes topPortfolioScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+@media screen and (min-width: 415) and (max-width: 650px) {
   .topBody {
     animation: topBodyOverflow 4s forwards;
   }
