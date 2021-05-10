@@ -10,7 +10,7 @@ type Props = {
 
 export const HeaderLayout: VFC<Props> = memo((props) => {
   const { children, title } = props;
-  const [ drawer, setDrawer ] = useState<string>("headerLayoutDrawerOff");
+  const [ drawer, setDrawer ] = useState<string>("headerLayoutDrawerFirst");
   const [ iconChangeFlag, setIconChangeFlag ] = useState<boolean>(true);
   const off = "headerLayoutDrawerOff";
   const on = "headerLayoutDrawerOn";
@@ -32,11 +32,14 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
         <Header onClickDrawer={ onClickDrawer } iconChangeFlag={ iconChangeFlag }>
           {title}
         </Header>
+        <div className="headerLayoutDummy"></div>
         <div className={drawer}>
-          <Link to="/" onClick={ onClickLink }>Top</Link>
-          <Link to="/about" onClick={ onClickLink }>About me</Link>
-          <Link to="/skill" onClick={ onClickLink }>Skill</Link>
-          <Link to="/portfolio" onClick={ onClickLink }>Portfolio</Link>
+           <nav>
+            <li><Link to="/" onClick={ onClickLink } className="headerLayoutLink headerLayoutTop">Top</Link></li>
+            <li><Link to="/about" onClick={ onClickLink } className="headerLayoutLink headerLayoutAbout">About me</Link></li>
+            <li><Link to="/skill" onClick={ onClickLink } className="headerLayoutLink headerLayoutSkill">Skill</Link></li>
+            <li><Link to="/portfolio" onClick={ onClickLink } className="headerLayoutLink headerLayoutPortfolio">Portfolio</Link></li>
+          </nav>
         </div>
         
         {children}
