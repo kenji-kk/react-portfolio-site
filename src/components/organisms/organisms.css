@@ -2,7 +2,7 @@
 @media screen and (min-width: 0) and (max-width: 550px) {
   .headerWrap {
     display: flex;
-    background: blueviolet;
+    background-color: rgba(255, 255, 255, 0.3);
     position: relative;
     padding-right: 2vw;
     height: 15vw;
@@ -10,6 +10,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 3;
   }
 
   .headerTitle {
@@ -19,6 +20,7 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
+    opacity: 0.5;
   }
 
   .HeaderMenuButton {
@@ -60,13 +62,14 @@
 @media screen and (min-width: 550px) {
   .headerWrap {
     display: flex;
-    background: blueviolet;
+    background-color: rgba(255, 255, 255, 0.3);
     position: relative;
     height: 6vw;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 3;
   }
 
   .headerTitle {
@@ -76,6 +79,7 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
+    opacity: 0.5;
   }
 
   .HeaderMenuButton {
