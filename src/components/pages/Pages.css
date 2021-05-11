@@ -465,6 +465,19 @@
 /* About.tsx */
 .aboutP {
   animation: slide 2s;
+  position: relative;
+}
+.headerLayoutImageAbout {
+  background: url("../../images/senro.jpg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  animation: backImageAppear 1s 2s forwards;
+  opacity: 0;
 }
 
 @keyframes slide {
@@ -474,4 +487,32 @@
   100% {
     transform: translateX(200px);
   }
+}
+
+/* Skill.tsx */
+.headerLayoutImageSkill {
+  background: url("../../images/syasin1.jpg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  animation: backImageAppear 1s 2s forwards;
+  opacity: 0;
+}
+
+/* Portfolio.tsx */
+.headerLayoutImagePortfolio {
+  background: url("../../images/syasin2.jpg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  animation: backImageAppear 1s 2s forwards;
+  opacity: 0;
 }
