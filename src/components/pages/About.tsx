@@ -1,4 +1,3 @@
-import { Height } from '@material-ui/icons';
 import { memo ,VFC }  from 'react';
 
 import './Pages.css';
