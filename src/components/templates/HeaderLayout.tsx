@@ -6,10 +6,11 @@ import './Templates.css'
 type Props = {
   children: ReactNode;
   title: string;
+  imgClass: string;
 }
 
 export const HeaderLayout: VFC<Props> = memo((props) => {
-  const { children, title } = props;
+  const { children, title, imgClass } = props;
   const [ drawer, setDrawer ] = useState<string>("headerLayoutDrawerFirst");
   const [ iconChangeFlag, setIconChangeFlag ] = useState<boolean>(true);
   const off = "headerLayoutDrawerOff";
@@ -29,7 +30,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
   };
   return (
         <>
-        <div className="headerLayoutImage">
+        <div className={imgClass}>
         </div>
         <Header onClickDrawer={ onClickDrawer } iconChangeFlag={ iconChangeFlag }>
           {title}
