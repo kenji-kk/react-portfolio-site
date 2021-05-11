@@ -1,6 +1,12 @@
 /* HeaderLayout.tsx */
 
 @media screen and (min-width: 0) and (max-width: 550px) {
+  .headerLayoutWrap {
+    background: url("../../images/senro.jpg") no-repeat fixed left bottom;
+    background-size: cover;
+    height: 100vh;
+  }
+
   .headerLayoutDrawerFirst {
     display: none;
   }

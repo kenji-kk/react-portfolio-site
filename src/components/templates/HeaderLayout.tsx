@@ -28,7 +28,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
     setIconChangeFlag(!iconChangeFlag);
   };
   return (
-      <div>
+      <div className="headerLayoutWrap">
         <Header onClickDrawer={ onClickDrawer } iconChangeFlag={ iconChangeFlag }>
           {title}
         </Header>
@@ -42,6 +42,6 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
           </nav>
         </div>
         {children}
-        </div>
+      </div>
   )
 });
