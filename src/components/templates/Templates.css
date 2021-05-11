@@ -1,45 +1,6 @@
 /* HeaderLayout.tsx */
 
 @media screen and (min-width: 0) and (max-width: 550px) {
-  .headerLayoutImageAbout {
-    background: url("../../images/senro.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
-  .headerLayoutImageSkill {
-    background: url("../../images/syasin1.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
-  .headerLayoutImagePortfolio {
-    background: url("../../images/syasin2.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
   .headerLayouRelative {
     position: relative;
     z-index: 1;
@@ -136,45 +97,6 @@
 }
 
 @media screen and (min-width: 551px) {
-  .headerLayoutImageAbout {
-    background: url("../../images/senro.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
-  .headerLayoutImageSkill {
-    background: url("../../images/syasin1.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
-  .headerLayoutImagePortfolio {
-    background: url("../../images/syasin2.jpg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    animation: backImageAppear 3s 3s forwards;
-    opacity: 0;
-  }
-
   .headerLayouRelative {
     position: relative;
     z-index: 1;
