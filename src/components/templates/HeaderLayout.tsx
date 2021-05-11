@@ -28,7 +28,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
     setIconChangeFlag(!iconChangeFlag);
   };
   return (
-      <>
+      <div>
         <Header onClickDrawer={ onClickDrawer } iconChangeFlag={ iconChangeFlag }>
           {title}
         </Header>
@@ -41,8 +41,7 @@ export const HeaderLayout: VFC<Props> = memo((props) => {
             <li><Link to="/portfolio" onClick={ onClickLink } className="headerLayoutLink headerLayoutPortfolio">Portfolio</Link></li>
           </nav>
         </div>
-        
         {children}
-      </>
+        </div>
   )
 });
