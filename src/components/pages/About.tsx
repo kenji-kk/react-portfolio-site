@@ -4,7 +4,7 @@ import './Pages.css';
 
 export const About: VFC = memo(() => {
   return (
-    <p style={{height:"300vh"}}>aboutページです</p>
+    <p className="aboutP" style={{height:"300vh"}}>aboutページです</p>
     
   )
 });

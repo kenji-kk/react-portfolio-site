@@ -461,3 +461,17 @@
     }
   }
 }
+
+/* About.tsx */
+.aboutP {
+  animation: slide 2s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
