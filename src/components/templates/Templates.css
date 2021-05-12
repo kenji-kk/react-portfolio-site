@@ -67,14 +67,6 @@
   .headerLayoutPortfolio:hover {
     transform: scale(1.3);
   }
-  @keyframes backImageAppear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
   @keyframes opacityAppear {
     0% {
@@ -163,15 +155,6 @@
 
   .headerLayoutPortfolio:hover {
     transform: scale(1.3);
-  }
-
-  @keyframes backImageAppear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
   @keyframes opacityAppear {
