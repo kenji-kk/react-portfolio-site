@@ -16,7 +16,7 @@ export const About: VFC = memo(() => {
         <p>趣味：音楽鑑賞、洋画、漫画、アニメ、ゲーム、、旅行、プログラミング</p>
         <p>性格：負けず嫌い</p>
         <p>好きな食べ物；ステーキ、ハンバーグ、焼肉、刺身、カレー</p>
-        <img src="${process.env.PUBLIC_URL}/../../../../../images/me.jpg" alt="" className="aboutMyImage"/>
+        <img src="../../../../../images/me.jpg" alt="" className="aboutMyImage"/>
       </div>
       <div className="aboutGitFormWrap"> 
         <div className="aboutGithubWrap">
