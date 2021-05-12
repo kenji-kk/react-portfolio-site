@@ -6,8 +6,9 @@ import { StartButton } from '../atoms/button/StartButton';
 export const Top: VFC = memo(() => {
   return(
     <>
+    <div className="topOver">
     <div className="topBody">
-      </div>
+    </div>
       <div className="topWrap">
         <p className="topWelcom">WELCOM</p>
         <p className="topTo">TO</p>
@@ -15,6 +16,7 @@ export const Top: VFC = memo(() => {
         <p className="topPortfolio">PORTFOLIOSITE</p>
         <StartButton />
       </div>
+    </div>
       </>
   )
 });
