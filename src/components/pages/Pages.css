@@ -3,6 +3,11 @@
   background: url("../../images/top-building.jpg") no-repeat fixed left bottom;
   background-size: cover;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .topWrap {
   background-color: rgba(255, 255, 255, 0);
@@ -15,21 +20,12 @@
 .topPortfolio {
   font-family: "Georgia";
 }
-.topWelcom {
-}
-
-.topTo {
-}
-
-.topKenji {
-}
-
-.topPortfolio {
-}
 
 @media screen and (min-width: 0) and (max-width: 414px) {
   .topBody {
     overflow: hidden;
+    opacity: 0;
+    animation: topImgOpacity 5s 2s forwards;
   }
 
   .topWrap {
@@ -38,7 +34,7 @@
     width: 87vw;
     height: auto;
     padding-top: 3vh;
-    animation: topWrapSlide 2s 4s forwards;
+    animation: topWrapSlide 2s 2s forwards;
     padding-bottom: 3vh;
   }
 
@@ -53,22 +49,31 @@
 
   .topWelcom {
     transform: translateY(-30vh);
-    animation: topWelcomSlide 0.5s 2s forwards, topWelcomScale 1s 2.5s;
+    animation: topWelcomSlide 0.5s forwards, topWelcomScale 1s 0.5s;
   }
 
   .topTo {
     transform: translateX(-50vh);
-    animation: topToSlide 0.5s 2.5s forwards, topToScale 1s 3s;
+    animation: topToSlide 0.5s 0.5s forwards, topToScale 1s 1s;
   }
 
   .topKenji {
     transform: translateX(60vh);
-    animation: topKenjiSlide 0.5s 3s forwards, topKenjiScale 1s 3.5s;
+    animation: topKenjiSlide 0.5s 1s forwards, topKenjiScale 1s 1.5s;
   }
 
   .topPortfolio {
     transform: translateY(70vh);
-    animation: topPortfolioSlide 0.5s 3.5s forwards, topPortfolioScale 1s 4s;
+    animation: topPortfolioSlide 0.5s 1.5s forwards, topPortfolioScale 1s 2s;
+  }
+
+  @keyframes topImgOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes topWelcomSlide {
@@ -166,7 +171,8 @@
 
 @media screen and (min-width: 415px) and (max-width: 650px) {
   .topBody {
-    animation: topBodyOverflow 4s forwards;
+    opacity: 0;
+    animation: topBodyOverflow 2s forwards, topImgOpacity 5s 2s forwards;
   }
 
   .topWrap {
@@ -175,7 +181,7 @@
     width: 87vw;
     height: auto;
     padding-top: 3vh;
-    animation: topWrapSlide 2s 4s forwards;
+    animation: topWrapSlide 2s 2s forwards;
     padding-bottom: 3vh;
   }
 
@@ -190,22 +196,31 @@
 
   .topWelcom {
     transform: translateY(-30vh);
-    animation: topWelcomSlide 0.5s 2s forwards, topWelcomScale 1s 2.5s;
+    animation: topWelcomSlide 0.5s forwards, topWelcomScale 1s 0.5s;
   }
 
   .topTo {
     transform: translateX(-50vh);
-    animation: topToSlide 0.5s 2.5s forwards, topToScale 1s 3s;
+    animation: topToSlide 0.5s 0.5s forwards, topToScale 1s 1s;
   }
 
   .topKenji {
     transform: translateX(60vh);
-    animation: topKenjiSlide 0.5s 3s forwards, topKenjiScale 1s 3.5s;
+    animation: topKenjiSlide 0.5s 1s forwards, topKenjiScale 1s 1.5s;
   }
 
   .topPortfolio {
     transform: translateY(70vh);
-    animation: topPortfolioSlide 0.5s 3.5s forwards, topPortfolioScale 1s 4s;
+    animation: topPortfolioSlide 0.5s 1.5s forwards, topPortfolioScale 1s 2s;
+  }
+
+  @keyframes topImgOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes topBodyOverflow {
@@ -315,7 +330,8 @@
 
 @media screen and (min-width: 651px) {
   .topBody {
-    animation: topBodyOverflow 4s forwards;
+    animation: topBodyOverflow 2s forwards, topImgOpacity 5s 2s forwards;
+    opacity: 0;
   }
 
   .topWrap {
@@ -324,7 +340,7 @@
     width: 60vw;
     height: auto;
     padding-top: 3vh;
-    animation: topWrapSlide 2s 4s forwards;
+    animation: topWrapSlide 2s 2s forwards;
     padding-bottom: 5vh;
   }
 
@@ -339,22 +355,31 @@
 
   .topWelcom {
     transform: translateY(-30vh);
-    animation: topWelcomSlide 0.5s 2s forwards, topWelcomScale 1s 2.5s;
+    animation: topWelcomSlide 0.5s forwards, topWelcomScale 1s 0.5s;
   }
 
   .topTo {
     transform: translateX(-100vw);
-    animation: topToSlide 0.5s 2.5s forwards, topToScale 1s 3s;
+    animation: topToSlide 0.5s 0.5s forwards, topToScale 1s 1s;
   }
 
   .topKenji {
     transform: translateX(100vw);
-    animation: topKenjiSlide 0.5s 3s forwards, topKenjiScale 1s 3.5s;
+    animation: topKenjiSlide 0.5s 1s forwards, topKenjiScale 1s 1.5s;
   }
 
   .topPortfolio {
     transform: translateY(70vh);
-    animation: topPortfolioSlide 0.5s 3.5s forwards, topPortfolioScale 1s 4s;
+    animation: topPortfolioSlide 0.5s 1.5s forwards, topPortfolioScale 1s 2s;
+  }
+
+  @keyframes topImgOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes topBodyOverflow {
@@ -463,19 +488,347 @@
 }
 
 /* About.tsx */
-.aboutImage {
-  background: url("../../images/senro.jpg") no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  animation: backImageAppear 2s 3s forwards;
-  opacity: 0;
+@media screen and (min-width: 0) and (max-width: 800px) {
+  .aboutImage {
+    background: url("../../images/senro.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    animation: backImageAppear 2s 3s forwards;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .aboutWrap {
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    padding: 0 20px;
+    overflow-x: hidden;
+  }
+
+  .aboutIntro {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    transform: translateX(-120vw);
+    animation: allSlide 1s forwards;
+  }
+
+  .aboutMyImage {
+    width: 40vw;
+    height: 60vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .aboutIntro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .aboutWrap p {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 0 5px 0 20px;
+  }
+
+  .aboutGitFormWrap {
+    color: white;
+  }
+
+  .aboutGithubWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 20px;
+    animation: allSlide 1s forwards;
+    transform: translateX(-120vw);
+    text-align: center;
+  }
+  .aboutGithubImg {
+    width: 70vw;
+    height: 20vw;
+  }
+
+  .aboutGithubWrap h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .aboutFormWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+    animation: allSlide 1s forwards;
+    transform: translateX(-120vw);
+  }
+  .aboutFormWrap h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .aboutFormWrap label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .aboutFormWrap input {
+    display: inline-block;
+  }
+
+  .aboutFormWrap .aboutName {
+    padding: 3px;
+    width: 50vw;
+  }
+
+  .aboutFormWrap .aboutMail {
+    width: 60vw;
+    padding: 3px;
+  }
+
+  .aboutFormWrap .aboutQue {
+    width: 70vw;
+    height: 20vw;
+    padding: 3px;
+  }
+
+  .aboutFormWrap button {
+    margin-left: 45%;
+    width: 50px;
+    border: none;
+    padding: 5px;
+    border-radius: 50vh;
+    background-color: orange;
+    font-weight: bold;
+  }
+
+  .aboutFormWrap button:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .aboutMessage {
+    position: relative;
+    height: 1000px;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    padding-top: 30px;
+    animation: allSlide 1s forwards;
+    transform: translateX(-120vw);
+  }
+
+  .aboutMessage h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .aboutMessage p {
+    margin-top: 60px;
+    font-size: 20vw;
+  }
+
+  @keyframes allSlide {
+    0% {
+      transform: translateX(-120vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
 
+@media screen and (min-width: 801px) {
+  .aboutImage {
+    background: url("../../images/senro.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    animation: backImageAppear 2s 3s forwards;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .aboutWrap {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    justify-content: space-around;
+    margin-top: 130px;
+    padding: 0 20px;
+    overflow-x: hidden;
+  }
+  .aboutIntro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+
+  .aboutWrap p {
+    padding-left: 100px;
+    padding-bottom: 5px;
+  }
+
+  .aboutIntro {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    animation: introSlide 1s;
+  }
+
+  .aboutMyImage {
+    width: 15vw;
+    height: 22vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .aboutGitFormWrap {
+    margin-left: 30px;
+    color: white;
+  }
+
+  .aboutGithubWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    animation: rightSlide 1s 1s forwards;
+    transform: translateX(70vw);
+  }
+
+  .aboutGithubWrap h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .aboutGithubImg {
+    width: 50vw;
+    height: 10vw;
+  }
+
+  .aboutFormWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+    transform: translateX(70vw);
+    animation: rightSlide 1s 2s forwards;
+  }
+  .aboutFormWrap h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .aboutFormWrap label {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .aboutFormWrap input {
+    display: inline-block;
+  }
+
+  .aboutFormWrap .aboutName {
+    margin-left: 80px;
+    padding: 3px;
+    margin-left: 100px;
+  }
+
+  .aboutFormWrap .aboutMail {
+    width: 200px;
+    padding: 3px;
+    margin-left: 100px;
+  }
+
+  .aboutFormWrap .aboutQue {
+    width: 400px;
+    height: 70px;
+    padding: 3px;
+    margin-left: 100px;
+  }
+
+  .aboutFormWrap button {
+    margin-left: 45%;
+    width: 50px;
+    border: none;
+    padding: 5px;
+    border-radius: 50vh;
+    background-color: orange;
+    font-weight: bold;
+  }
+
+  .aboutFormWrap button:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .aboutMessage {
+    position: relative;
+    height: 1000px;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    padding-top: 30px;
+    font-size: 35;
+    transform: translateX(120vw);
+    animation: messageSlide 1s 2s forwards;
+  }
+
+  .aboutMessage h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .aboutMessage p {
+    margin-top: 60px;
+    font-size: 100px;
+  }
+
+  @keyframes introSlide {
+    0% {
+      transform: translateX(-40vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightSlide {
+    0% {
+      transform: translateX(70vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes messageSlide {
+    0% {
+      transform: translateX(120vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
 /* Skill.tsx */
 .skillImage {
   background: url("../../images/syasin1.jpg") no-repeat;
@@ -502,4 +855,13 @@
   height: 100vh;
   animation: backImageAppear 2s 3s forwards;
   opacity: 0;
+}
+
+@keyframes backImageAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
