@@ -498,7 +498,7 @@
     right: 0;
     left: 0;
     height: 100vh;
-    animation: backImageAppear 2s 3s forwards;
+    animation: backImageAppear 2s 2s forwards;
     opacity: 0;
     z-index: 1;
   }
