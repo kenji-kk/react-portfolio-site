@@ -22,6 +22,15 @@
 }
 
 @media screen and (min-width: 0) and (max-width: 414px) {
+  .topOver {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
   .topBody {
     overflow: hidden;
     opacity: 0;
@@ -170,6 +179,16 @@
 }
 
 @media screen and (min-width: 415px) and (max-width: 650px) {
+  .topOver {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: topBodyOverflow 2s forwards;
+  }
   .topBody {
     opacity: 0;
     animation: topBodyOverflow 2s forwards, topImgOpacity 5s 2s forwards;
@@ -329,6 +348,17 @@
 }
 
 @media screen and (min-width: 651px) {
+  .topOver {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: topBodyOverflow 2s forwards;
+  }
+
   .topBody {
     animation: topBodyOverflow 2s forwards, topImgOpacity 5s 2s forwards;
     opacity: 0;
