@@ -889,7 +889,7 @@
 }
 /* Skill.tsx */
 .skillImage {
-  background: url("../../images/syasin1.jpg") no-repeat;
+  background: url("../../images/tec.jpg") no-repeat;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -899,6 +899,21 @@
   height: 100vh;
   animation: backImageAppear 2s 3s forwards;
   opacity: 0;
+  z-index: 1;
+}
+.skillWrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillLeftWrap div {
+  width: 300px;
+}
+
+.skillRightWrap div {
+  width: 300px;
 }
 
 /* Portfolio.tsx */
