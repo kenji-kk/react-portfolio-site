@@ -665,10 +665,10 @@
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 100px;
     padding-top: 30px;
     animation: allSlide 1s forwards;
     transform: translateX(-120vw);
+    margin: 100px 20px;
   }
 
   .aboutMessage h2 {

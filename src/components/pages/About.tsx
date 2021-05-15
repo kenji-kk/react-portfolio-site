@@ -21,7 +21,7 @@ export const About: VFC = memo(() => {
       <div className="aboutGitFormWrap"> 
         <div className="aboutGithubWrap">
           <h2>GitHub contribution</h2>
-          <p><a href="https://github.com/kenji-kk">GitHubアカウントハこちら</a></p>
+          <p><a href="https://github.com/kenji-kk">GitHubアカウントはこちら</a></p>
           <img src="https://ghchart.rshah.org/kenji-kk" alt="" className="aboutGithubImg"/>
           </div>
         <div className="aboutFormWrap">
