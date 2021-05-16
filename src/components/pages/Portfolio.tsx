@@ -7,7 +7,7 @@ export const Portfolio: VFC = memo(() => {
     <>
     <div className="portfolioImage"></div>
     <div className="portWrap">
-
+      <p>COMING SOON</p>
     </div>
     </>
   )
