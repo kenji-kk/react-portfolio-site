@@ -680,15 +680,6 @@
     margin-top: 60px;
     font-size: 20vw;
   }
-
-  @keyframes allSlide {
-    0% {
-      transform: translateX(-120vw);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 }
 
 @media screen and (min-width: 801px) {
@@ -706,12 +697,16 @@
     z-index: 1;
   }
 
+  .aboutAllWrap {
+    overflow-x: hidden;
+    margin-top: 130px;
+  }
+
   .aboutWrap {
     position: relative;
     display: flex;
     z-index: 2;
     justify-content: space-around;
-    margin-top: 130px;
     padding: 0 20px;
     overflow-x: hidden;
   }
@@ -888,34 +883,210 @@
   }
 }
 /* Skill.tsx */
-.skillImage {
-  background: url("../../images/tec.jpg") no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  animation: backImageAppear 2s 3s forwards;
-  opacity: 0;
-  z-index: 1;
-}
-.skillWrap {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-around;
-}
+@media screen and (min-width: 0) and (max-width: 920px) {
+  .skillImage {
+    background: url("../../images/tec.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    animation: backImageAppear 2s 2s forwards;
+    opacity: 0;
+    z-index: 1;
+  }
+  .skillWrap {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    margin-top: 100px;
+  }
 
-.skillLeftWrap div {
-  width: 300px;
-}
+  .skillLeftWrap > div {
+    width: 300px;
+    background-color: rgba(236, 240, 30, 0.5);
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 450px;
+    animation: allSlide 1s;
+    margin: 30px auto;
+  }
+  .skillLeftWrap > div > div {
+    height: 270px;
+  }
 
-.skillRightWrap div {
-  width: 300px;
-}
+  .skillRightWrap > div {
+    width: 300px;
+    background-color: rgba(236, 240, 30, 0.5);
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 450px;
+    animation: allSlide 3s;
+    margin: 40px auto;
+  }
+  .skillRightWrap > div > div {
+    height: 270px;
+  }
+  .skillLeftWrap p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
 
+  .skillRightWrap p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .skillHtml {
+    width: 170px;
+  }
+
+  .skillCss {
+    width: 170px;
+  }
+  .skillJava {
+    width: 200px;
+  }
+  .skillReact {
+    width: 250px;
+  }
+  .skillType {
+    width: 220px;
+  }
+  .skillRuby {
+    width: 200px;
+  }
+
+  .skillRails {
+    width: 300px;
+  }
+  .skillPython {
+    width: 200px;
+  }
+  @keyframes allSlide {
+    0% {
+      transform: translateX(-120vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+@media screen and (min-width: 920px) {
+  .skillImage {
+    background: url("../../images/tec.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    animation: backImageAppear 2s 3s forwards;
+    opacity: 0;
+    z-index: 1;
+  }
+  .skillWrap {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 130px;
+  }
+
+  .skillLeftWrap > div {
+    width: 400px;
+    background-color: rgba(236, 240, 30, 0.5);
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 450px;
+    animation: skillLeftSlide 3s;
+  }
+  .skillLeftWrap > div > div {
+    height: 270px;
+  }
+
+  .skillRightWrap > div {
+    width: 400px;
+    background-color: rgba(104, 235, 64, 0.5);
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 450px;
+    animation: skillRightSlide 3s;
+  }
+  .skillRightWrap > div > div {
+    height: 270px;
+  }
+  .skillLeftWrap p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .skillRightWrap p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .skillHtml {
+    width: 170px;
+  }
+
+  .skillCss {
+    width: 170px;
+  }
+  .skillJava {
+    width: 200px;
+  }
+  .skillReact {
+    width: 250px;
+  }
+  .skillType {
+    width: 220px;
+  }
+  .skillRuby {
+    width: 200px;
+  }
+
+  .skillRails {
+    width: 300px;
+  }
+  .skillPython {
+    width: 200px;
+  }
+
+  @keyframes skillLeftSlide {
+    0% {
+      transform: translateX(-50vw);
+    }
+    50% {
+      transform: translateX(50vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes skillRightSlide {
+    0% {
+      transform: translateX(50vw);
+    }
+    50% {
+      transform: translateX(-50vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
 /* Portfolio.tsx */
 .portfolioImage {
   background: url("../../images/syasin2.jpg") no-repeat;
@@ -936,5 +1107,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes allSlide {
+  0% {
+    transform: translateX(-120vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
