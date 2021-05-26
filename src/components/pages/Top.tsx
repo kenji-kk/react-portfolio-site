@@ -10,13 +10,13 @@ export const Top: VFC = memo(() => {
     <div className="topBody">
     </div>
       <div className="topWrap">
-        <p className="topWelcom">WELCOM</p>
+        <p className="topWelcom">WELCOME</p>
         <p className="topTo">TO</p>
         <p className="topKenji">KENJI'S</p>
         <p className="topPortfolio">PORTFOLIOSITE</p>
         <StartButton />
       </div>
-    </div>
+    </div>xx
       </>
   )
 });
