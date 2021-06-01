@@ -16,7 +16,7 @@ export const Top: VFC = memo(() => {
         <p className="topPortfolio">PORTFOLIOSITE</p>
         <StartButton />
       </div>
-    </div>xx
+    </div>
       </>
   )
 });
