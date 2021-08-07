@@ -1,6 +1,6 @@
 /*Top.tsx*/
 .topBody {
-  background: url("../../images/top-building.jpg") no-repeat fixed left bottom;
+  background: url("../../images/top.jpg") no-repeat fixed left bottom;
   background-size: cover;
   height: 100vh;
   position: fixed;
